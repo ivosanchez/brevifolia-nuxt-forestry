@@ -9,6 +9,7 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
+  description: esto es una descripcion
 - type: textarea
   name: cta
   config:
@@ -16,6 +17,7 @@ fields:
     schema:
       format: html-blocks
   label: Call to action
+  description: call to action
 - type: field_group
   name: contact
   fields:
@@ -28,7 +30,9 @@ fields:
   - type: text
     name: github_handle
     label: github_handle
+    description: github_handle
   label: Contact Info
+  description: Contact Info
 - name: background_color
   type: color
   config:
