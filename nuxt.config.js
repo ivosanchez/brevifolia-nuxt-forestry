@@ -8,7 +8,7 @@ const dynamicRoutes = getDynamicPaths({
  });
 
 export default {
-  mode: 'universal',
+
   /*
    ** Headers of the page
    */
@@ -25,35 +25,19 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#fff' },
-  /*
-   ** Global CSS
-   */
+  loading: { color: '#fff000' },
+  components: true,
   css: ['@/assets/styles/reset.scss', '@/assets/styles/global.scss'],
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [],
-  /*
-   ** Nuxt.js dev-modules
-   */
-  devModules: [
+  buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    // '@nuxtjs/eslint-module'
   ],
-  /*
-   ** Nuxt.js modules
-   */
   modules: [],
-  /*
-   ** Build configuration
-   */
+  /*** Build configuration */
   build: {
     /*
-     ** Using frontmatter-markdown-loader here to parse md files
+    ** Using frontmatter-markdown-loader here to parse md files
      */
     extend(config, ctx) {  
       config.module.rules.push(
@@ -72,7 +56,6 @@ export default {
  * Create an array of URLs from a list of files
  * @param {*} urlFilepathTable
  */
-
 /* referenced https://github.com/jake-101/bael-template */
 function getDynamicPaths(urlFilepathTable) {
   return [].concat(

@@ -2,8 +2,8 @@
 author: Allen Ginsberg
 title: Sunflower Sutra
 slug: sunflower-sutra
-date: 2019-08-01T07:00:00Z
-hero_image: "/adrien-olichon--aOsCcTJXWY-unsplash.jpg"
+date: 2019-08-01T07:00:00.000+00:00
+hero_image: "/igor-son-FV_PxCqgtwc-unsplash.jpg"
 
 ---
 I walked on the banks of the tincan banana dock and sat down under the huge shade of a Southern Pacific locomotive to look for the sunset over the box house hills and cry.

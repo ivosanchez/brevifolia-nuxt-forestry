@@ -5,6 +5,7 @@
       <figure class="blog__hero">
           <img :src="post.attributes.hero_image" :alt="post.attributes.title">
       </figure>
+
     <div class="blog__info" >
       <h1>{{ post.attributes.title }}</h1>
       <h3>{{ formattedDate }}</h3>
@@ -23,6 +24,7 @@
 <script>
   export default {
     layout: "layout",
+    post:'',
     computed: {
       formattedDate() {
         return new Date(this.post.attributes.date).toDateString().slice(4)
